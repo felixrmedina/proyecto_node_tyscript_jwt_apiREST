@@ -1,0 +1,31 @@
+{
+  "name": "proyecto-node-jwt-ts",
+  "version": "0.0.1",
+  "description": "Pryecto de node con typescript DB postgres y para autenticat jwt",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/server.ts",
+    "start": "node dist/server.js",
+    "build": "rimraf ./dist && tsc"
+  },
+  "author": "Felix Medina",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.7.5",
+    "prisma": "^5.20.0",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "proyecto-node-jwt-ts": "file:",
+    "typescript": "^5.6.3"
+  }
+}
